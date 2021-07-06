@@ -63,7 +63,7 @@ body {
 
 .logo {
   width: 17.25rem;
-  margin: -3rem;
+  margin: -3.9rem;
   color: var(--primary-orange);
 }
 
@@ -87,7 +87,7 @@ nav ul li {
 .navbar-brand {
   max-width: 15rem;
   padding: 0 !important;
-  height: 7rem !important;
+  height: 5.5rem !important;
 }
 
 @media (max-width: 768px) {
@@ -111,7 +111,7 @@ nav ul li {
   background: url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -298,6 +298,10 @@ nav ul li {
   padding: 3rem 0;
 }
 
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-orange);
@@ -316,6 +320,7 @@ nav ul li {
   background: var(--primary-black);
   width: 15rem;
   height: 8rem;
+  left: 10%;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -354,4 +359,64 @@ nav ul li {
 
 .hyper-link:hover {
   color: var(--primary-red);
+}
+
+.image-box-wrapper {
+  text-align: center;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+/****************Media*********************/
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100% !important;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media (max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90% !important;
+  }
+
+  .portfolio-image-popupbox {
+    width: 30%;
+  }
+}
+
+/****************Footer*********************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.circle {
+  border-radius: 50%;
 }

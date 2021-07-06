@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Aboutme from "./components/Aboutme";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Aboutme />
       <Experience />
       <Portfolio />
+      <Footer />
     </Fragment>
   );
 }
