@@ -9,6 +9,7 @@ import Aboutme from "./components/Aboutme";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Footer />
+      <Contacts />
     </Fragment>
   );
 }

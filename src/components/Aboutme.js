@@ -12,7 +12,7 @@ const Aboutme = () => {
         </div>
         <div className="col-lg-6 col-xm-12">
           <h1 className="about-heading">About Me</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique odit dolore maiores eum quisquam aliquid tempora. Dolorum nisi expedita magni tempore voluptas quod enim, sed eius provident aliquam velit quasi? Placeat maiores quis laudantium qui rerum. Beatae aut repellendus ex corporis a hic consequuntur nostrum quos inventore doloremque, excepturi ut optio rerum quis saepe aliquam blanditiis, tempore tenetur quaerat voluptatem? Sapiente, magni? Deserunt consequatur eum quaerat dolores vero optio at ea officia, fuga eius libero totam illo enim modi minima eligendi fugit sapiente earum veritatis atque ad deleniti quidem voluptatibus. Aperiam excepturi facere labore dolores eligendi iste suscipit dolor et laudantium sequi ullam ipsa nihil, eaque doloremque asperiores, temporibus quos dicta numquam sed dolore nostrum modi eum, ipsum consectetur. Natus.</p>
+          <p>Over the years, I have acquired the ability to leverage a product-oriented mindset, analytical problem-solving skills, and cross-functional collaboration experience to lead the end-to-end design and development of cutting-edge, scalable applications and infrastructure. I utilize diverse developer tools to drive efficiencies across the back-end and front-end development processes to optimize the run-time environment, maximize data access and availability, and deliver a secure user experience.</p>
         </div>
       </div>
     </div>

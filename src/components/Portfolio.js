@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import netflix from "../Img/netflix.png";
-import cityGuide from "../Img/city-guide-app.png";
+import classify from "../Img/classify.png";
+import devlink from "../Img/devlink.png";
 import portfolio from "../Img/portfolio.png";
-import taskManager from "../Img/task-manager.png";
+import chat from "../Img/chat.png";
 // Font Awesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -12,15 +12,20 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
-  // Netflix
+  // Classify
   const openPopupboxNetflix = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={netflix} alt="Netflix Clone Project..." />
+        <img className="portfolio-image-popupbox" src={classify} alt="Classify Task Manager Project..." />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dicta!</p>
+        <b>Demo:</b>
+        <a className="hyper-link" onClick={() => window.open("https://rauf-classify-app.herokuapp.com/")}>
+          https://rauf-classify-app.herokuapp.com/
+        </a>
+        <br />
         <b>GitHub:</b>
-        <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/netflix-project")}>
-          https://github.com/8020Coding/netflix-project
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/ClassiFy")}>
+          https://github.com/Raufmaharramov/ClassiFy
         </a>
       </>
     );
@@ -30,26 +35,26 @@ const Portfolio = () => {
   const popupboxConfigNetflix = {
     titleBar: {
       enable: true,
-      text: "Netflix Clone project"
+      text: "Classify task manager project"
     },
     fadeIn: true,
     fadeInSpeed: 500
   };
 
-  // City Guide App
+  // DevLink
   const openPopupboxCityGuide = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={cityGuide} alt="City Guide Project..." />
+        <img className="portfolio-image-popupbox" src={devlink} alt="DevLink..." />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dicta!</p>
         <b>Demo:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://city-guide-app-project.herokuapp.com/", "_blank")}>
-          https://city-guide-app-project.herokuapp.com/
+        <a className="hyper-link" onClick={() => window.open("https://rauf-devlink-app.herokuapp.com/", "_blank")}>
+          https://rauf-devlink-app.herokuapp.com/
         </a>
         <br />
         <b>GitHub:</b>
-        <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/city-guide-app")}>
-          https://github.com/8020Coding/city-guide-app
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/DevLink")}>
+          https://github.com/Raufmaharramov/DevLink
         </a>
       </>
     );
@@ -75,11 +80,6 @@ const Portfolio = () => {
         <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>
           https://portfolio-rea-and-material-ui.herokuapp.com/
         </a>
-        <br />
-        <b>GitHub:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/portfilio", "_blank")}>
-          https://github.com/8020Coding/portfilio
-        </a>
       </>
     );
     PopupboxManager.open({ content });
@@ -98,16 +98,16 @@ const Portfolio = () => {
   const openPopupboxTaskManager = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={taskManager} alt="Task Manager React and Redux Project..." />
+        <img className="portfolio-image-popupbox" src={chat} alt="Task Manager React Project..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
         <b>Demo:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://react-redux-task-manager.herokuapp.com/", "_blank")}>
-          https://react-redux-task-manager.herokuapp.com/
+        <a className="hyper-link" onClick={() => window.open("https://eager-poincare-969904.netlify.app", "_blank")}>
+          https://eager-poincare-969904.netlify.app
         </a>
         <br />
         <b>GitHub:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://github.com/8020Coding/task-manager", "_blank")}>
-          https://github.com/8020Coding/task-manager
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/RealChat_Client", "_blank")}>
+          https://github.com/Raufmaharramov/RealChat_Client
         </a>
       </>
     );
@@ -117,7 +117,7 @@ const Portfolio = () => {
   const popupboxConfigTaskManager = {
     titleBar: {
       enable: true,
-      text: "Task Manager React and Redux project."
+      text: "Task Manager React project."
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -129,13 +129,13 @@ const Portfolio = () => {
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
           <div className="portfolio-image-box col" onClick={openPopupboxNetflix}>
-            <img src={netflix} alt="Netflix Clone Project..." className="portfolio-image" />
+            <img src={classify} alt="Netflix Clone Project..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div className="portfolio-image-box col" onClick={openPopupboxCityGuide}>
-            <img src={cityGuide} alt="City Guide Project..." className="portfolio-image" />
+            <img src={devlink} alt="City Guide Project..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -147,7 +147,7 @@ const Portfolio = () => {
           </div>
           {/* - */}
           <div className="portfolio-image-box col" onClick={openPopupboxTaskManager}>
-            <img src={taskManager} alt="Task Manager Project..." className="portfolio-image" />
+            <img src={chat} alt="Task Manager Project..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
