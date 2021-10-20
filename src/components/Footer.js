@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>1954 79th street Brooklyn Ny, 11214</p>
+              <p>1954 79th street, Brooklyn NY, 11214</p>
             </div>
             <div className="d-flex">
-              <a href="tel: 9292559388">+1 (929)2559388</a>
+              <a href="tel: 9292559388">+1 (929) 255-9388</a>
             </div>
             <div className="d-flex">
-              <p>19rauf95@gmail.com</p>
+              <p>rauf.maharamov@gmail.com</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">

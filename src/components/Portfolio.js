@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import classify from "../Img/classify.png";
 import devlink from "../Img/devlink.png";
-import portfolio from "../Img/portfolio.png";
+import amazon from "../Img/amazon.png";
 import chat from "../Img/chat.png";
+import tesla from "../Img/tesla.png";
 // Font Awesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -16,16 +16,16 @@ const Portfolio = () => {
   const openPopupboxNetflix = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={classify} alt="Classify Task Manager Project..." />
+        <img className="portfolio-image-popupbox" src={amazon} alt="Amazon Clone..." />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dicta!</p>
         <b>Demo:</b>
-        <a className="hyper-link" onClick={() => window.open("https://rauf-classify-app.herokuapp.com/")}>
-          https://rauf-classify-app.herokuapp.com/
+        <a className="hyper-link" onClick={() => window.open("https://clone-ebe87.web.app/")}>
+          https://clone-ebe87.web.app/
         </a>
         <br />
         <b>GitHub:</b>
-        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/ClassiFy")}>
-          https://github.com/Raufmaharramov/ClassiFy
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/Amazon_clone")}>
+          https://github.com/Raufmaharramov/Amazon_clone
         </a>
       </>
     );
@@ -35,7 +35,7 @@ const Portfolio = () => {
   const popupboxConfigNetflix = {
     titleBar: {
       enable: true,
-      text: "Classify task manager project"
+      text: "Amazon Clone"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -74,11 +74,16 @@ const Portfolio = () => {
   const openPopupboxPortfolio = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={portfolio} alt="Portfolio Project..." />
+        <img className="portfolio-image-popupbox" src={tesla} alt="Tesla Clone..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
         <b>Demo:</b>{" "}
-        <a className="hyper-link" onClick={() => window.open("https://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>
-          https://portfolio-rea-and-material-ui.herokuapp.com/
+        <a className="hyper-link" onClick={() => window.open("https://raufmaharramov-tesla-clone.netlify.app/", "_blank")}>
+          https://raufmaharramov-tesla-clone.netlify.app/
+        </a>
+        <br />
+        <b>GitHub:</b>
+        <a className="hyper-link" onClick={() => window.open("https://github.com/Raufmaharramov/Tesla-clone")}>
+          https://github.com/Raufmaharramov/Tesla-clone
         </a>
       </>
     );
@@ -88,7 +93,7 @@ const Portfolio = () => {
   const popupboxConfigPortfolio = {
     titleBar: {
       enable: true,
-      text: "Portfolio project"
+      text: "Tesla Clone"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -98,7 +103,7 @@ const Portfolio = () => {
   const openPopupboxTaskManager = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={chat} alt="Task Manager React Project..." />
+        <img className="portfolio-image-popupbox" src={chat} alt="Real Chat..." />
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo est expedita quos adipisci suscipit unde itaque qui perferendis.</p>
         <b>Demo:</b>{" "}
         <a className="hyper-link" onClick={() => window.open("https://eager-poincare-969904.netlify.app", "_blank")}>
@@ -117,7 +122,7 @@ const Portfolio = () => {
   const popupboxConfigTaskManager = {
     titleBar: {
       enable: true,
-      text: "Task Manager React project."
+      text: "Real Chat"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -128,26 +133,27 @@ const Portfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
+          <div className="portfolio-image-box col" onClick={openPopupboxPortfolio}>
+            <img src={tesla} alt="Tesla Clone..." className="portfolio-image" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/*  */}
           <div className="portfolio-image-box col" onClick={openPopupboxNetflix}>
-            <img src={classify} alt="Netflix Clone Project..." className="portfolio-image" />
+            <img src={amazon} alt="Amazon Clone..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div className="portfolio-image-box col" onClick={openPopupboxCityGuide}>
-            <img src={devlink} alt="City Guide Project..." className="portfolio-image" />
+            <img src={devlink} alt="DevLink project..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box col" onClick={openPopupboxPortfolio}>
-            <img src={portfolio} alt="Portfolio Project..." className="portfolio-image" />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
           {/* - */}
           <div className="portfolio-image-box col" onClick={openPopupboxTaskManager}>
-            <img src={chat} alt="Task Manager Project..." className="portfolio-image" />
+            <img src={chat} alt="Real Chat..." className="portfolio-image" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
